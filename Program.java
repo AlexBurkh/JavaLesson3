@@ -25,6 +25,7 @@ public class Program {
         for (int i = 0; i < array.size(); i++) {
             if ((array.get(i) % 2 == 0) && (array.get(i) != 0)) {
                 array.remove(array.get(i));
+                --i;
             }
         }
         System.out.println(array);
